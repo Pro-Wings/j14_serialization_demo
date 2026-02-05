@@ -3,7 +3,7 @@ package com.prowings.serialization;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Student implements Serializable {
+public class Student extends Person implements Serializable{
 	
 	
 
@@ -17,10 +17,12 @@ public class Student implements Serializable {
 
 	public Student() {
 		super();
+		System.out.println("inside no-arg constructor!!!");
 	}
 
 	public Student(int rollNumber, String name, String address) {
 		super();
+		System.out.println("inside all-arg constructor!!!");
 		this.rollNumber = rollNumber;
 		this.name = name;
 		this.address1 = address;
